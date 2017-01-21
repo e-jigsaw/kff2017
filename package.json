@@ -1,0 +1,22 @@
+{
+  "private": true,
+  "name": "kff2017",
+  "description": "kff2017",
+  "main": "index.js",
+  "scripts": {
+    "serve": "static -p 9999 ext"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/e-jigsaw/kff2017.git"
+  },
+  "author": "jigsaw (http://jgs.me)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/e-jigsaw/kff2017/issues"
+  },
+  "homepage": "https://github.com/e-jigsaw/kff2017#readme",
+  "dependencies": {
+    "node-static": "^0.7.9"
+  }
+}
