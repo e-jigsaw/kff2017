@@ -4,7 +4,14 @@
   "description": "kff2017",
   "main": "index.js",
   "scripts": {
-    "serve": "static -p 9999 ext"
+    "build:css": "postcss src/index.css -o build/index.css",
+    "build:pug": "pug src/*.pug -o build",
+    "build:minify": "cssnano --safe < build/index.css > build/index.min.css",
+    "serve": "static -p 9999 ext",
+    "start": "static -p 9999 build",
+    "watch": "npm-run-all -p watch:*",
+    "watch:css": "npm run build:css -- -w",
+    "watch:pug": "npm run build:pug -- -w"
   },
   "repository": {
     "type": "git",
@@ -17,6 +24,15 @@
   },
   "homepage": "https://github.com/e-jigsaw/kff2017#readme",
   "dependencies": {
-    "node-static": "^0.7.9"
+    "cssnano-cli": "^1.0.5",
+    "node-static": "^0.7.9",
+    "normalize.css": "^7.0.0",
+    "npm-run-all": "^4.0.2",
+    "postcss-cli": "^4.0.0",
+    "postcss-cssnext": "^2.11.0",
+    "postcss-import": "^10.0.0",
+    "postcss-nested": "^2.0.2",
+    "pug-cli": "^1.0.0-alpha6",
+    "purecss": "^0.6.2"
   }
 }
