@@ -1,0 +1,42 @@
+extends layout/index
+
+block head
+  title チケット | カナザワ映画祭2017
+  meta(property='og:title', content='チケット | カナザワ映画祭2017')
+  meta(property='og:type', content='website')
+  meta(property='og:url', content='http://www.eiganokai.com/event/filmfes2017/')
+  meta(property='og:image', content='http://www.eiganokai.com/images/logo2017_5.jpg')
+  meta(property='og:description', content='カナザワ映画祭2017')
+  meta(property='og:locale', content='ja_JP')
+
+block body
+  #ticket
+    h1 チケット
+    table.pure-table.pure-table-bordered
+      thead
+        tr
+          th 種類
+          th 前売
+          th 当日
+      tbody
+        tr
+          td 1回鑑賞券
+          td 1,400円
+          td 1,600円
+        tr
+          td トークイベント「ヤプー倶楽部」
+          td 2,300円
+          td 2,500円
+    p 各上映作品毎に販売します。
+    p 半券をお持ちの方は授賞式を無料でご覧いただけます。
+    p 各チケットの変更、払い戻しはいたしません。
+    h1 取り扱い
+    p
+      a(
+        href='https://pro.form-mailer.jp/fms/36419866123603' target='_blank'
+      ) 注文フォーム
+    p
+      a(
+        href='https://cine-monde.jimdo.com/%E5%8A%87%E5%A0%B4%E6%A1%88%E5%86%85/'
+        target='_blank'
+      ) シネモンド
