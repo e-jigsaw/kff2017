@@ -2,16 +2,29 @@
 @import 'purecss/build/grids-min.css';
 @import 'purecss/build/grids-responsive-min.css';
 
+@custom-media --small-screen (width <= 400px);
+@custom-media --medium-screen (width < 790px);
+
 body {
   background-color: #E6DFCF;
 }
 
 .wrapper {
   margin: 0 auto;
+  width: 790px;
+
+  @media (--medium-screen) {
+    width: 100%;
+  }
 }
 
 header {
   background-color: #fff;
+
+  img {
+    height: 36px;
+    margin-top: 8px;
+  }
 
   .logo {
     text-align: center;
@@ -22,6 +35,11 @@ header {
     text-align: right;
     padding-right: 1em;
 
+    @media (--medium-screen) {
+      text-align: center;
+      padding: 0;
+    }
+
     a {
       margin: 4px;
       font-size: 12px;
@@ -29,15 +47,17 @@ header {
       text-decoration: none;
       line-height: 54px;
 
+      @media (--medium-screen) {
+        line-height: 25px;
+      }
+
+      @media (--small-screen) {
+        font-size: 10px;
+      }
+
       &:hover {
         background-color: #cf0;
       }
     }
-  }
-}
-
-@media (width >= 790px) {
-  .wrapper {
-    width: 790px;
   }
 }
