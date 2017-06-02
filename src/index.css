@@ -2,9 +2,14 @@
 @import 'purecss/build/grids-min.css';
 @import 'purecss/build/grids-responsive-min.css';
 @import 'purecss/build/tables-min.css';
+@import 'purecss/build/menus-min.css';
 
 @custom-media --small-screen (width <= 400px);
 @custom-media --medium-screen (width < 790px);
+
+:root {
+  --button-background-color: #FACF00;
+}
 
 body {
   background-color: #E6DFCF;
@@ -68,6 +73,23 @@ header {
   }
 }
 
+.pure-menu-link {
+  padding: 0;
+}
+
+.program {
+  display: inline-block;
+}
+
+.pure-menu-has-children > .pure-menu-link:after {
+  position: relative;
+  top: -1em;
+}
+
+.pure-menu-active > .pure-menu-link, .pure-menu-link:focus, .pure-menu-link:hover {
+  background-color: var(--button-background-color);
+}
+
 #top {
   position: relative;
   top: 3px;
@@ -75,7 +97,7 @@ header {
 
 #menu {
   .button {
-    background-color: #FACF00;
+    background-color: var(--button-background-color);
     border: 1px solid #999;
     text-align: center;
     display: block;
