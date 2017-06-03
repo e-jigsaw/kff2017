@@ -204,7 +204,7 @@ footer {
   }
 }
 
-#enfd, #top, #timetable, #ticket, #yapoo {
+#enfd, #top, #timetable, #ticket, #yapoo, #kichiku {
   a {
     color: var(--link-red);
     text-decoration: none;
@@ -232,7 +232,7 @@ footer {
   }
 }
 
-#enfd, #yapoo {
+#enfd, #yapoo, #kichiku {
   .desc {
     font-size: 13px;
   }
