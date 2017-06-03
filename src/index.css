@@ -9,6 +9,7 @@
 
 :root {
   --button-background-color: #FACF00;
+  --link-red: #B12528;
 }
 
 body {
@@ -26,6 +27,23 @@ body {
 
   @media (--medium-screen) {
     width: 100%;
+  }
+}
+
+.pure-menu-children {
+  background-color: var(--button-background-color);
+  text-align: left;
+  padding: .5em;
+
+  a {
+    text-decoration: none;
+    color: var(--link-red);
+  }
+
+  .pure-menu-item {
+    margin: .5em 0;
+    font-size: 18px;
+    border-bottom: solid 3px #000;
   }
 }
 
@@ -188,7 +206,7 @@ footer {
 
 #enfd, #top, #timetable, #ticket {
   a {
-    color: #B12528;
+    color: var(--link-red);
     text-decoration: none;
 
     &:hover {
