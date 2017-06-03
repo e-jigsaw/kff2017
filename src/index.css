@@ -190,7 +190,7 @@ footer {
   }
 }
 
-#enfd, #top {
+#enfd, #top, #timetable {
   p {
     margin: 0 1em;
   }
@@ -207,7 +207,9 @@ footer {
     padding: 0 1em;
     border-bottom: 1px solid #000;
   }
+}
 
+#enfd {
   .desc {
     font-size: 13px;
   }
