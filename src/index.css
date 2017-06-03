@@ -126,15 +126,6 @@ footer {
 }
 
 #timetable {
-  a {
-    color: #B12528;
-    text-decoration: none;
-
-    &:hover {
-      background-color: var(--button-background-color);
-    }
-  }
-
   table {
     width: 100%;
     table-layout: fixed;
@@ -186,11 +177,25 @@ footer {
 
 #ticket {
   table {
-    width: 100%;
+    width: 70%;
+    margin: 0 auto;
+
+    @media (--medium-screen) {
+      width: 100%;
+    }
   }
 }
 
-#enfd, #top, #timetable {
+#enfd, #top, #timetable, #ticket {
+  a {
+    color: #B12528;
+    text-decoration: none;
+
+    &:hover {
+      background-color: var(--button-background-color);
+    }
+  }
+
   p {
     margin: 0 1em;
   }
