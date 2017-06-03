@@ -204,7 +204,7 @@ footer {
   }
 }
 
-#enfd, #top, #timetable, #ticket, #yapoo, #kichiku {
+#enfd, #top, #timetable, #ticket, #yapoo, #kichiku, #access {
   a {
     color: var(--link-red);
     text-decoration: none;
