@@ -121,7 +121,20 @@ footer {
   }
 }
 
+.block {
+  margin: 1em 0;
+}
+
 #timetable {
+  a {
+    color: #B12528;
+    text-decoration: none;
+
+    &:hover {
+      background-color: var(--button-background-color);
+    }
+  }
+
   table {
     width: 100%;
     table-layout: fixed;
@@ -138,6 +151,36 @@ footer {
   p {
     margin: 0;
     text-align: center;
+  }
+
+  .pure-table thead {
+    background-color: #fff;
+  }
+
+  .empty {
+    background-color: #3D5B7D;
+  }
+
+  .short {
+    font-size: 13px;
+  }
+
+  .event {
+    background-color: var(--button-background-color);
+  }
+
+  .comp {
+    height: 113px;
+  }
+
+  .time {
+    background-color: #333;
+    color: #eee;
+    font-weight: bold;
+  }
+
+  .title {
+    font-weight: bold;
   }
 }
 
@@ -163,10 +206,6 @@ footer {
   h3 {
     padding: 0 1em;
     border-bottom: 1px solid #000;
-  }
-
-  .block {
-    margin: 1em 0;
   }
 
   .desc {
