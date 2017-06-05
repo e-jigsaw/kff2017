@@ -259,4 +259,9 @@ footer {
   font-size: 12px;
   padding: .5em;
   margin: 1em 0;
+
+  a {
+    color: #fff;
+    border-bottom: 1px dotted #eee;
+  }
 }
