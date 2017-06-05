@@ -885,3 +885,8 @@ footer {
   padding: .5em;
   margin: 1em 0;
 }
+
+#credit a {
+    color: #fff;
+    border-bottom: 1px dotted #eee;
+  }
