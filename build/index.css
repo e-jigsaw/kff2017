@@ -754,6 +754,14 @@ footer {
   top: 3px;
 }
 
+#top rect {
+    fill: rgba(0, 0, 0, 0)
+  }
+
+#top rect:hover {
+      fill: rgba(250, 207, 0, .6);
+}
+
 #menu .button {
     background-color: #FACF00;
     border: 1px solid #999;
