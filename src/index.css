@@ -120,6 +120,14 @@ footer {
 #top {
   position: relative;
   top: 3px;
+
+  rect {
+    fill: rgba(0, 0, 0, 0);
+
+    &:hover {
+      fill: rgba(250, 207, 0, 0.6);
+    }
+  }
 }
 
 #menu {
