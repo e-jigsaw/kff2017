@@ -785,7 +785,7 @@ footer {
 }
 
 #timetable, #ticket, #access {
-  padding-bottom: 3em; 
+  padding-bottom: 3em;
 }
 
 #timetable table {
@@ -916,6 +916,10 @@ footer {
   padding: .5em;
   margin: 1em 0;
 }
+
+#credit p {
+    line-height: 1.5em;
+  }
 
 #credit a {
     color: #fff;
