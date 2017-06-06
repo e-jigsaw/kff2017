@@ -768,6 +768,7 @@ footer {
     text-align: center;
     display: block;
     text-decoration: none;
+    height: 45px;
   }
 
 #menu .button p {
