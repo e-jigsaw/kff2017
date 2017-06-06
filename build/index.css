@@ -870,6 +870,11 @@ footer {
     border-bottom: 1px solid #000;
   }
 
+#enfd .film, #yapoo .film, #kichiku .film {
+    width: 75%;
+    margin: 0 auto
+  }
+
 #enfd .desc, #yapoo .desc, #kichiku .desc {
     font-size: 13px;
   }
@@ -880,11 +885,25 @@ footer {
 
 #enfd .director, #yapoo .director, #kichiku .director {
     padding: .5em;
-    width: 80%;
+    width: 88%;
     margin: 1em auto;
     border: 3px solid #666;
-    border-radius: 5px;
+    border-radius: 5px
   }
+
+@media (max-width: 789px) {
+
+  #enfd .film, #yapoo .film, #kichiku .film {
+      width: 100%;
+  }
+    }
+
+@media (max-width: 789px) {
+
+  #enfd .director, #yapoo .director, #kichiku .director {
+      width: 80%;
+  }
+    }
 
 #credit {
   background-color: #111;
