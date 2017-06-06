@@ -10,10 +10,11 @@
 :root {
   --button-background-color: #FACF00;
   --link-red: #B12528;
+  --body-background-color: #E6DFCF;
 }
 
 body {
-  background-color: #E6DFCF;
+  background-color: var(--body-background-color);
 }
 
 .max {
@@ -37,6 +38,10 @@ body {
   text-align: left;
   padding: .5em;
 
+  @media (--small-screen) {
+    max-width: 285px;
+  }
+
   a {
     text-decoration: none;
     color: var(--link-red);
@@ -46,6 +51,12 @@ body {
     margin: .5em 0;
     font-size: 18px;
     border-bottom: solid 3px #000;
+    white-space: normal;
+    width: 450px;
+
+    @media (--small-screen) {
+      width: 290px;
+    }
   }
 }
 
@@ -117,10 +128,23 @@ footer {
   background-color: var(--button-background-color);
 }
 
-#top {
-  position: relative;
-  top: 3px;
+#header-visual {
+  background-color: var(--body-background-color);
 
+  a {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    width: 75%;
+    line-height: 0;
+
+    @media (--medium-screen) {
+      width: 100%;
+    }
+  }
+}
+
+#top {
   rect {
     fill: rgba(0, 0, 0, 0);
 
