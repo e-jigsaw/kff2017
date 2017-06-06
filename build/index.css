@@ -670,7 +670,23 @@ body {
     margin: .5em 0;
     font-size: 18px;
     border-bottom: solid 3px #000;
+    white-space: normal;
+    width: 450px
   }
+
+@media (max-width: 400px) {
+
+  .pure-menu-children {
+    max-width: 285px;
+  }
+  }
+
+@media (max-width: 400px) {
+
+  .pure-menu-children .pure-menu-item {
+      width: 290px;
+  }
+    }
 
 header {
   background-color: #fff;
@@ -749,10 +765,24 @@ footer {
   background-color: #FACF00;
 }
 
-#top {
-  position: relative;
-  top: 3px;
+#header-visual {
+  background-color: #E6DFCF;
 }
+
+#header-visual a {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    width: 75%;
+    line-height: 0
+  }
+
+@media (max-width: 789px) {
+
+  #header-visual a {
+      width: 100%;
+  }
+    }
 
 #top rect {
     fill: rgba(0, 0, 0, 0)
