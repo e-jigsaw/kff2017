@@ -244,6 +244,15 @@ footer {
 }
 
 #enfd, #yapoo, #kichiku {
+  .film {
+    width: 75%;
+    margin: 0 auto;
+
+    @media (--medium-screen) {
+      width: 100%;
+    }
+  }
+
   .desc {
     font-size: 13px;
   }
@@ -254,10 +263,14 @@ footer {
 
   .director {
     padding: .5em;
-    width: 80%;
+    width: 88%;
     margin: 1em auto;
     border: 3px solid #666;
     border-radius: 5px;
+
+    @media (--medium-screen) {
+      width: 80%;
+    }
   }
 }
 
