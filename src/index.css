@@ -137,6 +137,7 @@ footer {
     text-align: center;
     display: block;
     text-decoration: none;
+    height: 45px;
 
     p {
       margin: 0;
