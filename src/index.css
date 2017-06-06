@@ -154,6 +154,10 @@ footer {
   margin: 1em 0;
 }
 
+#timetable, #ticket, #access {
+  padding-bottom: 3em; 
+}
+
 #timetable {
   table {
     width: 100%;
