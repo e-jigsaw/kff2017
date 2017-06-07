@@ -7,7 +7,7 @@
     "build:asset": "mkdir -p build/images && cp -Rp src/images build/",
     "build:css": "postcss src/index.css -o build/index.css",
     "build:pug": "pug src/*.pug -o build",
-    "build:minify": "cssnano --safe < build/index.css > build/index.min.css",
+    "build:minify": "cssnano --safe < build/index.css > build/index.min.css && cp build/index.min.css build/index.css",
     "serve": "static -p 9999 ext",
     "start": "static -p 9999 build",
     "watch": "npm-run-all -p watch:*",
